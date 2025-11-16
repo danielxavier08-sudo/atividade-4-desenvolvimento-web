@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Administração - Página Exemplo</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f7fcff; }
+    header { background: #0c387d; color: #fff; padding: 20px; text-align: center; }
+    nav { background: #216ec7; }
+    nav ul { margin: 0; padding: 0; list-style: none; display: flex; }
+    nav li { margin: 0; }
+    nav a { display: block; padding: 15px 20px; color: #fff; text-decoration: none; }
+    nav a:hover { background: #51a4ff; }
+    main { padding: 30px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #c3dafe; padding: 10px; text-align: left; }
+    th { background: #e5f0ff; }
+    button { background: #216ec7; color: #fff; border: none; padding: 7px 12px; margin: 2px; cursor: pointer; }
+    button:hover { background: #0c387d; }
+    footer { background: #0c387d; color: #fff; text-align: center; padding: 15px; position: fixed; width: 100%; bottom: 0; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Administração do Sistema</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="admin-login.html">Login</a></li>
+      <li><a href="admin-objetos.html">Objetos</a></li>
+      <li><a href="admin-usuarios.html">Usuários</a></li>
+      <li><a href="index.html">Início</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Troque esse conteúdo para o que você quiser em cada página! -->
+
+    <h2>Cadastrar Usuário</h2>
+<form>
+  <label>Nome:</label>
+  <input type="text" required>
+  <label>Email:</label>
+  <input type="email" required>
+  <button type="submit">Cadastrar</button>
+</form>
+<h3>Lista de Usuários</h3>
+<table>
+  <tr><th>ID</th><th>Nome</th><th>Email</th><th>Ações</th></tr>
+  <tr>
+    <td>1</td>
+    <td>Fulano</td>
+    <td>fulano@email.com</td>
+    <td>
+      <button>Editar</button>
+      <button>Apagar</button>
+    </td>
+  </tr>
+</table>
+
+    <!-- Para as outras páginas, troque pelo formulário e tabela de cadastro de objetos ou usuários! -->
+  </main>
+
+  <footer>
+    Autor: Seu Nome | <a href="sobre-autor.html" style="color:#fff; text-decoration:underline;">Sobre o Autor</a>
+  </footer>
+
+</body>
+</html>
